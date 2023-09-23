@@ -1,0 +1,45 @@
+.login-heading ,.signup-heading{
+    font-family: 'Caveat', cursive;
+    color:red;
+  }
+  .card{
+    border: none;
+    /* background: linear-gradient(to bottom,#d6e3eb, #44A4D1); */
+  }
+
+  .img-fluid{
+    border-radius: 10px;
+  }
+  .container{
+    border: none;
+     background: linear-gradient(to bottom,#FF5733, #FF3355); 
+    padding: 50px;
+    
+    
+  }
+  .forgot-password{
+    color : #fff;
+  }
+  .social-logo{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+     
+    border-radius: 50px;
+  }
+
+  .stylish-button {
+    background-color: #ff5722; /* Change to your desired button color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  
+    /* Optional hover effect */
+    .stylish-button:hover {
+      background-color: #e64a19; /* Change to the hover color */
+    }
+  }
+  
