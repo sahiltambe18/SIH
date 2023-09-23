@@ -52,7 +52,7 @@ class LoginPage extends Component {
                   </div>
                   <div className="col-md-6">
                     <h2 className="card-title my-4 login-heading">Login</h2>
-                    <p className='welcome'>Welcome back!! Please login to tour account.</p>
+                    <p className='welcome'>Welcome back!! Please login to your account.</p>
                     <form>
                       <div className="form-group my-3">
                         <label htmlFor="username">Username</label>
