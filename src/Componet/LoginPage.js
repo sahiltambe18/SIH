@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import "./Login.css";
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat" />
@@ -13,27 +13,23 @@ class LoginPage extends Component {
       password: '',
     };
   }
-
+  
   handleUsernameChange = (e) => {
     this.setState({ username: e.target.value });
   }
-
+  
   handlePasswordChange = (e) => {
     this.setState({ password: e.target.value });
   }
-
+  
   handleLogin = () => {
     // You can implement your login logic here
     // For this example, we'll just log the username and password to the console
     console.log('Username:', this.state.username);
     console.log('Password:', this.state.password);
   }
-
-  handleRegister=()=>{
-    const navigate = useNavigate(); // Use the useNavigate hook
-    navigate('/signup');
-    
-  }
+  
+  
 
   render() {
     return (
@@ -83,13 +79,10 @@ class LoginPage extends Component {
                       >
                         Login
                       </button>
-                      <button
-                        type="button"
-                        className="btn btn-block my-3 mx-4 stylish-button"
-                        onClick={this.handleRegister}
-                      >
-                        Register
-                      </button>
+                      
+                      <Link to={'/signup'} className="btn btn-block my-3 mx-4 stylish-button" >
+                       Register
+                      </Link>
                       <p className="forgot-password">
                         <a href="/">Forgot Password?</a>
                       </p>

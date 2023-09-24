@@ -92,6 +92,7 @@ class Signup extends Component {
                       >
                         Sign Up
                       </button>
+                      
                     </form>
                     <hr className="my-4" />
                 <p className="text-center">Create account with:</p>
